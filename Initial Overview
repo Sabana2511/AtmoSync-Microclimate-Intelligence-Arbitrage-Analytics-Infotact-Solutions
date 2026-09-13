@@ -1,0 +1,41 @@
+#Initial overview
+#The dataset contains 53,305 rows and 29 columns.
+#The data appears to describe agricultural logistics operations involving:
+#* Vehicle types
+#* Crop types
+#* Harvest and logistics timing
+#* Storage conditions
+#* Fuel and energy usage
+#* Route and delivery metrics
+#* Traffic, weather, and queue conditions
+#* IoT sensor readings
+#* Spoilage, efficiency, and quality indicators
+Dataset structure
+#* 25 numeric columns
+#* 4 object/date-like columns
+#* Main categorical fields include Vehicle_Type and Crop_Type
+#* Unnamed: 0 is actually a timestamp ranging from June 1, 2018 to June 30, 2024
+#* Harvest_Date ranges from January 1, 2017 to January 1, 2018
+#* No conventional missing values were detected
+#Category breakdown
+#Vehicles are heavily concentrated in trucks.
+#* Truck — 37,444 rows
+#* Van — 10,562 rows
+#* Motorbike — 5,299 rows
+
+#Crops are more balanced between corn and wheat.
+#* Corn — 21,400 rows
+#* Wheat — 21,253 rows
+#* Rice — 10,652 rows
+#Data-quality warning
+#The largest issue is not missing values, but infinite numeric values and extreme magnitudes. Several columns are almost entirely infinite.
+#The most affected fields include:
+#* Inventory_Levels — 100% infinite
+#* Vehicle_Load_Capacity — approximately 100% infinite
+#* Crop_Yield — approximately 99.9% infinite
+#* Station_Capacity — approximately 99.0% infinite
+#* Energy_Consumption — approximately 98.7% infinite
+#* Efficiency_Ratio — approximately 96.7% infinite
+#* Operational_Cost — approximately 96.7% infinite
+#These values make the dataset unsuitable for direct modeling or normal descriptive statistics without cleaning. 
+#Some finite values are also extremely large, suggesting possible overflow, corrupted transformations, or unit-scaling problems.
