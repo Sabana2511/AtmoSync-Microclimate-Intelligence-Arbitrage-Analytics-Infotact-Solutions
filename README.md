@@ -30,7 +30,7 @@ To prevent extreme mathematical skew while preserving 100% of raw observations, 
 * `Vibration_Level_Capped`
 
 ### 3. Feature Engineering & Artifact Resolution
-* **Quality Maintenance Ratio:** Derived composite metric evaluating storage efficiency relative to queue delay ($\text{Warehouse\_Storage\_Time} / \text{Queue\_Time}$).
+* **Quality Maintenance Ratio:** Derived composite metric evaluating storage efficiency relative to queue delay (`Warehouse_Storage_Time` / `Queue_Time`).
 * **Division-by-Zero Handling:** Resolved near-zero denominator mathematical artifacts (`inf` values) by casting to `NaN` followed by percentile capping.
 * **Operational Threshold Flags:**
   * `High_Queue_Delay_Flag`: Binary indicator for facility queue times $> 5.0$ hours.
