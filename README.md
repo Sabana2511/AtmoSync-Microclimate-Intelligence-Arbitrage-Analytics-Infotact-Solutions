@@ -60,21 +60,3 @@ The dashboard is structured across three core reporting views:
 * **View 1: Executive Overview:** High-level KPI cards (Total Shipments, Mean Queue Delay, High Spoilage Rate, Average Fuel Expense) and monthly trend lines.
 * **View 2: Bottleneck & Fleet Profiling:** Heatmaps and matrix grids mapping `Vehicle_Type` against `Transit_Duration_Class` to identify idle fuel loss and queue bottlenecks.
 * **View 3: Quality Degradation & Loss Analysis:** Decomposition trees tracking quality maintenance drops by crop type across delay severity bins (`0-2h` to `>10h`).
-
----
-
-## 🚀 How to Run the Pipeline
-
-### Prerequisites
-* Python 3.8+
-* Required Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`
-
-### Execution
-
-```bash
-# 1. Clone the repository
-git clone [https://github.com/your-username/AtmoSync-Analytics.git](https://github.com/your-username/AtmoSync-Analytics.git)
-cd AtmoSync-Analytics
-
-# 2. Run the main processing and aggregation script
-python main_pipeline.py
