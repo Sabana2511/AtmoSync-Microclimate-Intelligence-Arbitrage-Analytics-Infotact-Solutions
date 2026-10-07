@@ -83,5 +83,5 @@ The dashboard is structured across three core reporting views:
 * **View 2: Bottleneck & Fleet Profiling:** Heatmaps and matrix grids mapping `Vehicle_Type` against `Transit_Duration_Class` to identify idle fuel loss and queue bottlenecks.
 * **View 3: Quality Degradation & Loss Analysis:** Decomposition trees tracking quality maintenance drops by crop type across delay severity bins (`0-2h` to `>10h`).
 
-## Quick Project Summary Paragraph ()
+## Conclusion
 The AtmoSync analysis evaluates 53,305 European crop shipments to quantify the impact of logistics delays and micro-climate conditions on crop degradation. Statistical profiling identified a critical 5-hour queue delay inflection point, beyond which crop quality retention collapses by over 70%. With 29.13% of total shipments exceeding high spoilage thresholds and average fuel expenses reaching $172.92/trip due to idling, the pipeline establishes pre-aggregated dimensional models (PowerBI_Aggregated_KPIs.csv) to drive real-time executive dashboarding in Power BI.
